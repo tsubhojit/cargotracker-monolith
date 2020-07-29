@@ -1,9 +1,10 @@
 package com.practicalddd.cargotracker.routing.domain.model.entities;
 
 
-import com.practicalddd.cargotracker.routingms.domain.model.valueobjects.Location;
-
 import javax.persistence.*;
+
+import com.practicalddd.cargotracker.handling.domain.model.valueobjects.Location;
+
 import java.util.Date;
 
 @Entity
@@ -20,6 +21,7 @@ public class CarrierMovement {
     @Column(name="departure_Date")
     private Date departureDate;
     @Embedded
+    @AttributeOverride(name = "unLocCode", column = @Column(name = "arrival_location_id"))
     private Location arrivalLocation;
     @Embedded
     @AttributeOverride(name = "unLocCode", column = @Column(name = "departure_location_id"))

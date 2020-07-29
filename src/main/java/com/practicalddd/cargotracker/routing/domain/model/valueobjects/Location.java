@@ -1,4 +1,4 @@
-package com.practicalddd.cargotracker.routingms.domain.model.valueobjects;
+package com.practicalddd.cargotracker.routing.domain.model.valueobjects;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
