@@ -43,9 +43,17 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
 
           ports:
-            - name: 9080-tcp
+            - name: http
               containerPort: {{ .Values.image.port }}
               protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
           env:
             - name: INGRESS_HOST
               value: ""
