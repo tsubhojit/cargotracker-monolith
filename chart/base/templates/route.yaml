@@ -20,7 +20,7 @@ spec:
   path: /
   to:
     kind: Service
-    name: {{ $fullName }}
+    name: {{ $fullName }}-cargotracker
   tls:
     termination: edge
 {{- end }}
