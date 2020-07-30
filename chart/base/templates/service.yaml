@@ -13,7 +13,7 @@ spec:
     - port: {{ .Values.service.port }}
       targetPort: {{ .Values.image.port }}
       protocol: TCP
-      name: http
+      name: 9080-tcp
   selector:
     app.kubernetes.io/name: {{ include "starter-kit.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
