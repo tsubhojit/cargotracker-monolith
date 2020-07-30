@@ -49,11 +49,11 @@ spec:
           livenessProbe:
             httpGet:
               path: /
-              port: 9080-tcp
+              port: http
           readinessProbe:
             httpGet:
               path: /
-              port: 9080-tcp
+              port: http
           env:
             - name: INGRESS_HOST
               value: ""
