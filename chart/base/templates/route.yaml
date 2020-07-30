@@ -14,16 +14,4 @@ spec:
   tls:
     termination: edge
   wildcardPolicy: None
-spec:
-  #host: *.appdev-cloudnative-ocp43-6fb0b86391cd68c8282858623a1dddff-0000.eu-gb.containers.appdomain.cloud
-  #wildcardPolicy: Subdomain  
-  path: /
-  to:
-    kind: Service
-    name: {{ $fullName }}
-  tls:
-    termination: edge
 {{- end }}
-
-
-
