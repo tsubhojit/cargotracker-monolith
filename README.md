@@ -171,7 +171,7 @@ Handling Module
     
     This returns a unique "Booking Id" which should be put into all requests with the placeholder <<BookingId>>
     
-    Cargo Routing (http://localhost:8080/cargotracker/serviceapi/cargorouting)
+    Cargo Routing (http://localhost:9080/cargotracker/serviceapi/cargorouting)
     --------------------------------------------------------------------------
     {
       "bookingId": "<<BookingId>>"

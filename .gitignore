@@ -16,7 +16,3 @@
 src/main/liberty/config/server.env
 src/main/resources/localdev-config.json
 /.pydevproject
-/src/main/java/com/practicalddd/cargotracker/CargoMainApplication.java
-/src/main/java/com/practicalddd/cargotracker/booking/infrastructure/services/http/ExternalCargoRoutingClient.java
-/src/main/java/com/practicalddd/cargotracker/tracking/interfaces/events/CargoBookedEventHandler.java
-/src/main/liberty/config/server.xml
