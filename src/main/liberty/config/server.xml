@@ -12,7 +12,8 @@
     <!-- Declare the jar files for MySQL access through JDBC. -->
     <dataSource id="cargotracker" jndiName="jdbc/cargotracker">
         <jdbcDriver libraryRef="MySQLLib"/>
-        <properties databaseName="cargotracker" serverName="mysql" portNumber="3306"
+        <properties databaseName="cargotracker"
+                    serverName="mysql" portNumber="3306"
                     user="cargotracker" password="cargotracker" serverTimezone="EST"/>
     </dataSource>
     <library id="MySQLLib">

@@ -1,10 +1,9 @@
 package com.practicalddd.cargotracker.routing.domain.model.entities;
 
 
-import javax.persistence.*;
-
 import com.practicalddd.cargotracker.handling.domain.model.valueobjects.Location;
 
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
